@@ -1,0 +1,22 @@
+Latitude (decimal degrees):	32.713
+Longitude (decimal degrees):	-4.934
+Radiation database:	PVGIS-SARAH2
+
+year		month		H(h)_m		T2m
+2005		Jan		117.34		1.9
+2005		Feb		115.77		3.0
+2005		Mar		162.75		9.9
+2005		Apr		208.0		14.2
+2005		May		228.02		19.5
+2005		Jun		215.79		22.1
+2005		Jul		227.21		25.0
+2005		Aug		218.62		24.5
+2005		Sep		184.9		18.9
+2005		Oct		138.95		14.8
+2005		Nov		105.56		7.5
+2005		Dec		101.46		4.5
+
+H(h)_m: Irradiation on horizontal plane (kWh/m2/mo)
+T2m: 24 hour average of temperature (degree Celsius)
+
+PVGIS (c) European Union, 2001-2022
