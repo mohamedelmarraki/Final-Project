@@ -1,0 +1,10 @@
+Frigorífico: 250 - 350 W.
+Lavadora: 1.500 - 2.500 W.
+Lavavajillas: 1.500 - 2.500 W.
+Televisión: 200 - 400 W.
+Calefacción: 1.000 - 3.000 W.
+Aire acondicionado: 1.000 - 2.000 W.
+Microondas: 100 - 1.500 W.
+Vitrocerámica: 1.000 - 2.000 W.
+Horno: 1.000 - 2.500 W.
+Aspiradora: 1.000 - 1.500 W.

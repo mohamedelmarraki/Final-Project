@@ -1,0 +1,123 @@
+Las potencias que relacionamos a continuacion son representaciones aproximadas, y el consumo de energía real de estos dispositivos puede variar sustancialmente.
+Revise las etiquetas de alimentación, o mejor aún, mida el consumo de amperaje con un amperímetro de pinza o un monitor de energía del hogar. Generalmente puede encontrar amperímetros y medidores en su ferretería local o en línea. Multiplique las horas utilizadas en el día promedio por el vataje (watts) enumerado a continuación. Esto le dará los watts-hora consumidas por día, también puede usar la calculadora de watts a watts/hora
+Recuerde que algunos equipos eléctricos, como abrepuertas de garaje, se usan solo por una fracción de hora o minuto por día. Un electrodomestico de 300 vatios utilizado durante 5 minutos por día solo consumirá 25 vatios por hora al día.
+Cuando se da un rango de números, la cifra más baja a menudo denota un modelo tecnológicamente más nuevo y más eficiente. Las letras “NA” denotan electrodomésticos que normalmente serían alimentados por fuentes eléctricas no convencionales en una casa con energía FV (Paneles solares).
+Si está pensando en generar su propia energía, le sugerimos encarecidamente que invierta en un verdadero multímetro digital RMS. En realidad, tiene sentido saber dónde se consume la energía, incluso si no la está produciendo, y si lo está, estos medidores son herramientas de diagnóstico esenciales.
+Aparato Watts
+Cocina
+Licuadora 500 W
+Abrelatas 150W
+Maquina de cafe 1000W
+Lavavajillas 1200-1500W
+Máquina de espresso 800W
+Congelador – Vertical – 15 pies cúbicos pie 1240 Wh / Día **
+Congelador – Cofre – 15 pies cúbicos pie 1080 Wh / Día **
+Nevera – 20 pies cúbicos ft. (AC) 1411 Wh / día **
+Nevera -16 cu. ft. (AC) 1200 Wh / día **
+Basurero 450W
+Hervidor eléctrico 1200W
+Microonda 1000W
+Horno – Eléctrico 1200W
+Tostadora 850W
+Horno tostador 1200W
+Mezclador de pie 300W
+Refrigeración calefacción
+Ventilador 200W
+Ventilador de techo 120W
+Aire acondicionado central: 24,000 BTU NA 3800W
+Aire acondicionado central – 10,000 BTU NA 3250W
+Ventilador de horno 800W
+Calentador de espacio NA 1500W
+Calentador de agua sin tanque – Eléctrico 18000W
+Calentador de agua – Eléctrico 4500W
+Aire acondicionado de ventana 10,000 BTU NA 900W
+Aire acondicionado de ventana 12,000 BTU NA 3250W
+Bomba de pozo – 1/3 1HP 750W
+Aparato Watts
+Lavandería
+Secadora de ropa – Eléctrica 3000W
+Secadora de ropa – Gas 1800W
+Lavadora de ropa 800W
+Plancha 1200W
+Aparato Watts
+Sala
+Reproductor Blu-ray 15W
+Equipo de TV por cable 35W
+Reproductor de DVD 15W
+TV – LCD 150W
+TV – Plasma 200
+Antena parabólica 25W
+Receptor estéreo 450W
+Consola de videojuegos 150W
+Aparato Watts
+Luces  e iluminación
+Bombilla CFL – Equivalente de 40 vatios 11W
+Bombilla CFL – Equivalente de 60 vatios 18W
+Bombilla CFL – Equivalente de 75 vatios 20W
+Bombilla CFL – Equivalente de 100 vatios 30W
+Fluorescente compacto 20 vatios 22W
+Fluorescente compacto de 25 vatios 28W
+Halógeno – 40 vatios 40W
+Incandescente 50 Watt 50W
+Incandescente 100 vatios 100W
+Bombilla LED – Equivalente de 40 vatios 10W
+Bombilla LED – Equivalente de 60 vatios 13W
+Bombilla LED – equivalente a 75 vatios 18W
+Bombilla LED – Equivalente de 100 vatios 23W
+Aparato Watts
+Oficina
+Computadora de escritorio (estándar) 200W
+Computadora de escritorio (juegos) 500W
+Ordenador portátil 100W
+Monitor LCD 100W
+Módem 7W
+Trituradora de papel 150W
+Impresora 100W
+Enrutador 7W
+Teléfono inteligente: recarga 6W
+Tableta – Recargue 8W
+  Que es la potencia activa P (kW)
+Aparato Watts
+Herramientas
+Sierra de cinta – 14 “ 1100W
+Lijadora de banda – 3 “ 1000W
+Sierra de cadena – 12 “ 1100W
+Sierra Circular – 7-1 / 4 “ 900W
+Sierra circular 8-1 / 4 “ 1400W
+Cortadora de disco- 9 “ 1200W
+Taladro – 1/4 “ 250W
+Taladro – 1/2 “ 750W
+Taladro – 1 “ 1000W
+Motosierra 450W
+Motoguadaña electrica 500W
+Aparato Watts
+Electrodomesticos
+Radio despertador 7W
+Plancha de pelo 150W
+Deshumidificador 280W
+Afeitadora eléctrica 15W
+Manta eléctrica 200W
+Secador de pelo 1500W
+Humidificador 200W
+Radioteléfono – Recibir 5W
+Radioteléfono – Transmisión 75W
+Máquina de coser 100W
+Maquina de vacio 1000W
+Nota : Los televisores, computadoras y otros dispositivos que permanecen enchufados pero que aún no están encendidos siguen consumiendo energía.
+** Para estimar el número de horas que un refrigerador realmente funciona con su potencia máxima, divida entre tres el tiempo total que el refrigerador está enchufado. Los refrigeradores, aunque se encienden todo el tiempo, se encienden y apagan según sea necesario para mantener las temperaturas interiores.
+* Los valores de energía diaria enumerados aquí corresponden a las unidades más eficientes de su clase y la información se obtuvo de Consumer Guide to Home y del sitio web de General Electric.
+Electrodomésticos marcados como Energy Star:
+El área de lavandería y la cocina de la casa moderna contienen los mayores consumidores de electricidad. Si se conserva la energía y se maximiza el uso de los electrodomésticos Energy Star , su hogar estara en camino de convertirse en un ejemplo de vida independiente.
+Tenga en cuenta la potencia de sus electrodomésticos y el tiempo de uso.  Muchas preparaciones de alimentos se pueden hacer sin electricidad, y las comidas se pueden cocinar alternativamente con una olla a presión o horno tostador, y tres platos horneados a la vez ahorran tiempo al cocinero y también conservan energía.
+Refrigeradores energéticamente eficientes:
+Los refrigeradores son infames por usar demasiada energía. Si su refrigerador actual tiene más de 10 años, reemplácelo con un refrigerador nuevo de bajo consumo . Los modelos más nuevos son mucho más eficientes energéticamente que el viejo refrigerador verde en la casa de la abuela.
+Los nuevos refrigeradores no tienen que ser caros para ser eficientes. Verifique las pegatinas de Energy Guide y las etiquetas de precios. Y por último pero no menos importante, considere una unidad más pequeña porque los refrigeradores, más grandes consumen mas.
+Si no puede reemplazar su vieja unidad con un modelo moderno de alta eficiencia, mantenga afinada su nevera vieja limpiando las rejillas de ventilación y dándole espacio a la pared para permitir la ventilación. Use la función de ahorro de energía, si está disponible, o configure el termostato al requisito mínimo de 38 grados. Mantenga su congelador lo más lleno posible. Use botellas de plástico llenas de agua para espacios vacíos.
+  ¿Que significa los kW y kVA en un generador eléctrico?
+Artículos relacionados:
+Banco de capacitores - Selección, calculo, ubicación, resonancia, perdidas, formulas, mantenimiento ...
+Electricidad consumida por electrodomésticos apagados
+Qué significa y cual es la diferencia entre kW y kWh explicados
+Cual es la diferencia entre kW y kVA - potencia activa (kW) vs potencia aparente (kVA)
+¿Que significa los kW y kVA en un generador eléctrico?
+Que es la potencia activa P (kW)
