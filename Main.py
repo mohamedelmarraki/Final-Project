@@ -1,5 +1,7 @@
 import pandas as pd # importar la librería pandas
 
+import streamlit as st
+
 import numpy as np # importar la librería numpy
 
 import requests # importar la librería requests
