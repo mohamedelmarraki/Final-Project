@@ -174,3 +174,13 @@ def pot_electrodomesticos(df1, df2, df3):
     json.dump(pot_electrodomesticos,tf)
     
     tf.close()
+
+def read_datos_provincias():
+    import pandas as pd
+    datos_provinicias = pd.read_csv("data/Datos da cada provincia Española.csv")
+    datos_provinicias.drop("Unnamed: 0", axis=1, inplace=True)
+    datos_provinicias.drop(0, axis=0, inplace=True)
+    diccionario = {}
+    for provincia, informacion in zip(datos_provinicias["Provincias"], datos_provinicias["Información de cada Provincia"]):
+        diccionario[provincia]=informacion
+    return diccionario

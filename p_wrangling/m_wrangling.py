@@ -34,9 +34,9 @@ def electro_usuario():
             
     return horas_func, unidades
 
-diccionarios = electro_usuario()
+'''diccionarios = electro_usuario()
 horas_func = diccionarios[0]
-unidades = diccionarios[1]
+unidades = diccionarios[1]'''
 
 
 
@@ -114,7 +114,7 @@ def Numero_paneles():
     
     csv_pvgis =("").join(csv_files).split("/")[-1]
     
-    df = pandas.read_csv(f'../../../../mohamedelmarraki/Downloads/{csv_pvgis}', sep="\t", header=[4]).head(12)
+    df = pandas.read_csv(f'../../../../../Downloads/{csv_pvgis}', sep="\t", header=[4]).head(12)
     
     df = df.loc[:, ["year", "month","H(i_opt)_m", "T2m"]]
     
