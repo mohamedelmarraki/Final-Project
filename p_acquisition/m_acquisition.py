@@ -148,7 +148,7 @@ def pvgis (dire):
     
     from os import remove
     
-    csv_files = glob.glob('../../../Downloads/*.csv')
+    csv_files = glob.glob('../../Downloads/*.csv')
     
     csv_pvgis = ("").join(csv_files).split("/")
     
@@ -159,7 +159,7 @@ def pvgis (dire):
             lista.append(i.replace("..", ""))
     
     for i in lista:
-        remove(f'../../../Downloads/{i}')
+        remove(f'../../Downloads/{i}')
         
     geo = Nominatim(user_agent = "MyApp")
     

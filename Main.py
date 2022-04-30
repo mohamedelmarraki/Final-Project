@@ -176,14 +176,25 @@ for i in range(5):
 col1, col2, col3 = st.columns([2,6,2])
 with col2:
     st.markdown("### Rellene la información solicitada a continuación si quiere realizar un cálculo aproximado de la instalación solar fotovoltaica para autoconsumo de su vivienda o negocio. También podrá ver el coste de su intalción y cuanto tiempo tardará en amortizarla, también tendrá una estimación de la energía que producirá su instalación durante todo el año.")
+    for i in range(5):
+        st.write("")
 
-col1, col2, col3 = st.columns([6,4,3])
+col1, col2 = st.columns(2)
 
 
 with col2:
-    adress=st.text_input("Introduzca la calle en la que vive")
+    adress=st.text_input("Introduzca su dirección. Ejem: Calle Zaragoza, Fuenlabrada, Madrid")
     provincia_usuario = adress.split(",")
-    if len(provincia_usuario) == 2:
+    if len(provincia_usuario) == 3:
+        provincia_usuario = provincia_usuario[2]
+        provincia_usuario = provincia_usuario.lower().strip()
+        diccionario = man.read_datos_provincias()
+        for i, y in diccionario.items():
+            if provincia_usuario == i.lower():
+                st.write(y)
+            else:
+                pass
+    elif len(provincia_usuario) == 2:
         provincia_usuario = provincia_usuario[1]
         provincia_usuario = provincia_usuario.lower().strip()
         diccionario = man.read_datos_provincias()
@@ -194,28 +205,28 @@ with col2:
                 pass
     elif len(provincia_usuario) == 1:
         pass
-    
 
 with col1:
-    if adress is "":
+    if adress == "":
         folium_static(mre.map_dirección_usuario("Madrid", zoom_start1=2))
     else:
         folium_static(mre.map_dirección_usuario(adress))
 
 
-with col3:
-    for i in range(15):
-        st.write("")
-    st.markdown(" ¿Cómo puedo averiguar mi consumo medio mensual?")
+with col2:
+    consumo_mensual=st.number_input("Introduzca su Consumo eléctrico medio mensual")
+    with st.expander(' ¿Cómo puedo averiguar mi consumo medio mensual?'):
+        st.image('Images/foto8.png')
+    mac.pvgis(adress)
+    st.markdown(mwr.Numero_paneles_consumo_mensual(consumo_mensual))
+        
+        
+    
 
-
-
-
-
-
-
-
-
+options = st.multiselect('What are your favorite colors',
+                             ['Green', 'Yellow', 'Red', 'Blue'],
+                             ['Yellow', 'Red'])
+st.write('You selected:', options)
 
 
 

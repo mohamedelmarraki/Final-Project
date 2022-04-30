@@ -5,7 +5,7 @@ def electro_usuario():
     
     import json
     
-    tf = open("../data/pot_electrodomesticos.json", "r")
+    tf = open("data/pot_electrodomesticos.json", "r")
     
     electro_dict = json.load(tf)
     
@@ -135,7 +135,7 @@ def Numero_paneles():
 
 
 
-def Numero_paneles_consumo_mensual():
+def Numero_paneles_consumo_mensual(consumo_teorico):
     
     import numpy
     
@@ -143,15 +143,16 @@ def Numero_paneles_consumo_mensual():
     
     import glob
     
-    consumo_teorico = (int(input("Introduce el consumo eléctrico medio mensual")))
+    #consumo_teorico = (int(input("Introduce el consumo eléctrico medio mensual")))
     
     consumo_diario= consumo_teorico*1000/31/(0.95)
     
-    csv_files = glob.glob('../../../Downloads/*.csv')
+    csv_files = glob.glob('../../Downloads/*.csv')
     
     csv_pvgis =("").join(csv_files).split("/")[-1]
     
-    df = pandas.read_csv(f'../../../../mohamedelmarraki/Downloads/{csv_pvgis}', sep="\t", header=[4]).head(12)
+    #df = pandas.read_csv(f'../../../Downloads/{csv_pvgis}', sep="\t", header=[4]).head(12)
+    df = pandas.read_csv(f'../../Downloads/{csv_pvgis}', sep="\t", header=[4]).head(12)
     
     df = df.loc[:, ["year", "month","H(i_opt)_m", "T2m"]]
     
