@@ -162,10 +162,14 @@ def pvgis (dire):
         remove(f'../../Downloads/{i}')
         
     geo = Nominatim(user_agent = "MyApp")
+    if dire == "":
+        loc = geo.geocode("Madrid")
     
-    loc = geo.geocode(dire)
-    
-    coordenadas = loc.latitude, loc.longitude    
+        coordenadas = loc.latitude, loc.longitude
+    else:
+        loc = geo.geocode(dire)
+        
+        coordenadas = loc.latitude, loc.longitude
     
     options = webdriver.ChromeOptions()
     

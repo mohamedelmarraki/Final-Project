@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_3c5a6eeb43599734c715690378728114 {
+                #map_ee1c4a51711a752e47783aace13f4069 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,13 +35,13 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_3c5a6eeb43599734c715690378728114" ></div>
+            <div class="folium-map" id="map_ee1c4a51711a752e47783aace13f4069" ></div>
         
 </body>
 <script>    
     
-            var map_3c5a6eeb43599734c715690378728114 = L.map(
-                "map_3c5a6eeb43599734c715690378728114",
+            var map_ee1c4a51711a752e47783aace13f4069 = L.map(
+                "map_ee1c4a51711a752e47783aace13f4069",
                 {
                     center: [40.4000427, -3.6736597],
                     crs: L.CRS.EPSG3857,
@@ -55,36 +55,34 @@
 
         
     
-            var tile_layer_f8ad5dd54716409af98df3014f793269 = L.tileLayer(
+            var tile_layer_274917729cbaae173419c561a865a2a2 = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_3c5a6eeb43599734c715690378728114);
+            ).addTo(map_ee1c4a51711a752e47783aace13f4069);
         
     
-            var marker_d3a70d430af57a704248217fdadb2c25 = L.marker(
+            var marker_4bbbdd43fa8e251963eb5fc4a6330af7 = L.marker(
                 [40.4000427, -3.6736597],
                 {}
-            ).addTo(map_3c5a6eeb43599734c715690378728114);
+            ).addTo(map_ee1c4a51711a752e47783aace13f4069);
         
     
-        var popup_92f109ee686e5dd8dc1165db09a741e6 = L.popup({"maxWidth": "100%"});
+            var icon_d9fa611fc180999e54696181b1d9c5d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_4bbbdd43fa8e251963eb5fc4a6330af7.setIcon(icon_d9fa611fc180999e54696181b1d9c5d7);
+        
+    
+        var popup_8c238d21efe7800271925b07cefe7cbe = L.popup({"maxWidth": 2650});
 
         
-            var html_3175a0033e88d3911dc03a4bc920238f = $(`<div id="html_3175a0033e88d3911dc03a4bc920238f" style="width: 100.0%; height: 100.0%;"><h1>Happy&nbsp;New&nbsp;Year!</h1><br><br>www:&nbsp;<a href="https://stackoverflow.com">Stackoverflow.com</a><br><br>date:&nbsp;2021.01.01</div>`)[0];
-            popup_92f109ee686e5dd8dc1165db09a741e6.setContent(html_3175a0033e88d3911dc03a4bc920238f);
+            var i_frame_1a7693aaa0a5d8180558da2a57032433 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IHN0eWxlPSJmb250LWZhbWlseTogdGltZXMgbmV3IHJvbWFuOyBjb2xvcjogYmx1ZSI+CiAgICAgICAgPGg+PGI+IENhbGxlIGRlIGxvcyBIZXJtYW5vcyBSdWl6LCBBZGVsZmFzLCBSZXRpcm8sIE1hZHJpZCwgw4FyZWEgbWV0cm9wb2xpdGFuYSBkZSBNYWRyaWQgeSBDb3JyZWRvciBkZWwgSGVuYXJlcywgQ29tdW5pZGFkIGRlIE1hZHJpZCwgMjgwMDcsIEVzcGHDsWEgPC9iPjwvaD48L2Rpdj4KICAgICAgICA=" width="600" style="border:none !important;" height="53"></iframe>`)[0];
+            popup_8c238d21efe7800271925b07cefe7cbe.setContent(i_frame_1a7693aaa0a5d8180558da2a57032433);
         
 
-        marker_d3a70d430af57a704248217fdadb2c25.bindPopup(popup_92f109ee686e5dd8dc1165db09a741e6)
+        marker_4bbbdd43fa8e251963eb5fc4a6330af7.bindPopup(popup_8c238d21efe7800271925b07cefe7cbe)
         ;
 
         
     
-    
-            marker_d3a70d430af57a704248217fdadb2c25.bindTooltip(
-                `<div>
-                     <b>Calle de los Hermanos Ruiz, Adelfas, Retiro, Madrid, Área metropolitana de Madrid y Corredor del Henares, Comunidad de Madrid, 28007, España</b><br><br>
-                 </div>`,
-                {"sticky": true}
-            );
-        
 </script>

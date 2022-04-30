@@ -180,45 +180,53 @@ with col2:
         st.write("")
 
 col1, col2 = st.columns(2)
-
-
-with col2:
-    adress=st.text_input("Introduzca su dirección. Ejem: Calle Zaragoza, Fuenlabrada, Madrid")
-    provincia_usuario = adress.split(",")
-    if len(provincia_usuario) == 3:
-        provincia_usuario = provincia_usuario[2]
-        provincia_usuario = provincia_usuario.lower().strip()
-        diccionario = man.read_datos_provincias()
-        for i, y in diccionario.items():
-            if provincia_usuario == i.lower():
-                st.write(y)
-            else:
-                pass
-    elif len(provincia_usuario) == 2:
-        provincia_usuario = provincia_usuario[1]
-        provincia_usuario = provincia_usuario.lower().strip()
-        diccionario = man.read_datos_provincias()
-        for i, y in diccionario.items():
-            if provincia_usuario == i.lower():
-                st.write(y)
-            else:
-                pass
-    elif len(provincia_usuario) == 1:
-        pass
-
 with col1:
-    if adress == "":
-        folium_static(mre.map_dirección_usuario("Madrid", zoom_start1=2))
-    else:
-        folium_static(mre.map_dirección_usuario(adress))
+    agree = st.checkbox('Sé mi consumo medio mensual?')
 
 
 with col2:
-    consumo_mensual=st.number_input("Introduzca su Consumo eléctrico medio mensual")
-    with st.expander(' ¿Cómo puedo averiguar mi consumo medio mensual?'):
-        st.image('Images/foto8.png')
-    mac.pvgis(adress)
-    st.markdown(mwr.Numero_paneles_consumo_mensual(consumo_mensual))
+    agree2 = st.checkbox('No Sé mi consumo medio mensual?')
+
+col1, col2 = st.columns(2)
+
+if agree:
+    with col2:
+        adress=st.text_input("Introduzca su dirección. Ejem: Calle Zaragoza, Fuenlabrada, Madrid")
+        provincia_usuario = adress.split(",")
+        if len(provincia_usuario) == 3:
+            provincia_usuario = provincia_usuario[2]
+            provincia_usuario = provincia_usuario.lower().strip()
+            diccionario = man.read_datos_provincias()
+            for i, y in diccionario.items():
+                if provincia_usuario == i.lower():
+                    st.write(y)
+                else:
+                    pass
+        elif len(provincia_usuario) == 2:
+            provincia_usuario = provincia_usuario[1]
+            provincia_usuario = provincia_usuario.lower().strip()
+            diccionario = man.read_datos_provincias()
+            for i, y in diccionario.items():
+                if provincia_usuario == i.lower():
+                    st.write(y)
+                else:
+                    pass
+        elif len(provincia_usuario) == 1:
+            pass
+
+    with col1:
+        if adress == "":
+            folium_static(mre.map_dirección_usuario("Madrid", zoom_start1=2))
+        else:
+            folium_static(mre.map_dirección_usuario(adress))
+
+
+    with col2:
+        consumo_mensual=st.number_input("Introduzca su Consumo eléctrico medio mensual")
+        with st.expander(' ¿Cómo puedo averiguar mi consumo medio mensual?'):
+            st.image('Images/foto8.png')
+        mac.pvgis(adress)
+        st.markdown(mwr.Numero_paneles_consumo_mensual(consumo_mensual))
         
         
     
@@ -227,10 +235,6 @@ options = st.multiselect('What are your favorite colors',
                              ['Green', 'Yellow', 'Red', 'Blue'],
                              ['Yellow', 'Red'])
 st.write('You selected:', options)
-
-
-
-
 
 
 
