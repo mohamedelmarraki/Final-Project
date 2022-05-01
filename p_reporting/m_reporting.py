@@ -62,3 +62,50 @@ def energía_generador_fotovoltaico(N_paneles):
     df_concat = pd.concat([df["month"], df_potencia], axis =1)
     
     return fig.show()
+
+
+
+def obtener_amortización(Numero_paneles):
+    a = pd.read_csv("data/Datos de amortización.csv")
+    if Numero_paneles <4:
+        return a[(a["Número de paneles"] == 0) & (a["Potencia del Inversor"]==0)]
+    if Numero_paneles ==4:
+        return a[(a["Número de paneles"] == Numero_paneles) & (a["Potencia del Inversor"]==2)]
+    if Numero_paneles ==5:
+        return a[(a["Número de paneles"] == Numero_paneles) & (a["Potencia del Inversor"]==3)]
+    if Numero_paneles ==6:
+        return a[(a["Número de paneles"] == Numero_paneles) & (a["Potencia del Inversor"]==3)]
+    if Numero_paneles ==7:
+        return a[(a["Número de paneles"] == Numero_paneles) & (a["Potencia del Inversor"]==4)]
+    if Numero_paneles ==8:
+        return a[(a["Número de paneles"] == Numero_paneles) & (a["Potencia del Inversor"]==4)]
+    if Numero_paneles ==9:
+        return a[(a["Número de paneles"] == Numero_paneles) & (a["Potencia del Inversor"]==5)]
+    if Numero_paneles ==10:
+        return a[(a["Número de paneles"] == Numero_paneles) & (a["Potencia del Inversor"]==5)]
+    if Numero_paneles ==11:
+        return a[(a["Número de paneles"] == Numero_paneles) & (a["Potencia del Inversor"]==5)]
+    if Numero_paneles ==12:
+        return a[(a["Número de paneles"] == Numero_paneles) & (a["Potencia del Inversor"]==6)]
+    if Numero_paneles ==13:
+        return a[(a["Número de paneles"] == Numero_paneles) & (a["Potencia del Inversor"]==6)]
+    if Numero_paneles ==14:
+        return a[(a["Número de paneles"] == Numero_paneles) & (a["Potencia del Inversor"]==7)]
+    if Numero_paneles ==15:
+        return a[(a["Número de paneles"] == Numero_paneles) & (a["Potencia del Inversor"]==7)]
+    if Numero_paneles ==16:
+        return a[(a["Número de paneles"] == Numero_paneles) & (a["Potencia del Inversor"]==8)]
+    if Numero_paneles ==17:
+        return a[(a["Número de paneles"] == Numero_paneles) & (a["Potencia del Inversor"]==8)]
+    if Numero_paneles ==18:
+        return a[(a["Número de paneles"] == Numero_paneles) & (a["Potencia del Inversor"]==9)]
+    if Numero_paneles ==19:
+        return a[(a["Número de paneles"] == Numero_paneles) & (a["Potencia del Inversor"]==9)]
+    if Numero_paneles ==20:
+        return a[(a["Número de paneles"] == Numero_paneles) & (a["Potencia del Inversor"]==9)]
+    if Numero_paneles ==21:
+        return a[(a["Número de paneles"] == Numero_paneles) & (a["Potencia del Inversor"]==9)]
+    if Numero_paneles ==22:
+        return a[(a["Número de paneles"] == Numero_paneles) & (a["Potencia del Inversor"]==9)]
+    if Numero_paneles >22:
+        return a[(a["Número de paneles"] == 22) & (a["Potencia del Inversor"]==9)]

@@ -182,10 +182,12 @@ with col2:
 col1, col2 = st.columns(2)
 with col1:
     agree = st.checkbox('Sé mi consumo medio mensual?')
+    with st.expander(' ¿Cómo puedo averiguar mi consumo medio mensual?'):
+            st.image('Images/foto8.png')
 
 
 with col2:
-    agree2 = st.checkbox('No Sé mi consumo medio mensual?')
+    agree2 = st.checkbox('Calcular mi consumo medio mensual?')
 
 col1, col2 = st.columns(2)
 
@@ -223,18 +225,52 @@ if agree:
 
     with col2:
         consumo_mensual=st.number_input("Introduzca su Consumo eléctrico medio mensual")
+        Precio=st.number_input("Introduzca su Precio de compra de la Electricidad (Opcional)")
         with st.expander(' ¿Cómo puedo averiguar mi consumo medio mensual?'):
-            st.image('Images/foto8.png')
+            st.image('Images/foto9.png')
         mac.pvgis(adress)
-        st.markdown(mwr.Numero_paneles_consumo_mensual(consumo_mensual))
-        
-        
+        Numero_paneles=(mwr.Numero_paneles_consumo_mensual(consumo_mensual))
+    a = mre.obtener_amortización(Numero_paneles)
+    for i in range(8):
+        st.write("")
+    for i in a["Importe del presupuesto"]:
+        b = i
+    for i in a["Total (21% IVA incluido)"]:
+        c = i
+    for i in a["Producción anual"]:
+        d = i
+    for i in a["Ahorro anual"]:
+        e = i
+    for i in a["Amortización de la inversión"]:
+        f = i
+    for i in a["Número de paneles"]:
+        k = i
+    for i in a["Potencia del Inversor"]:
+        h = i
+    for i in a["Potencia del Generador Fotovoltaico"]:
+        i = i
+    col1, col2, col3, col4 = st.columns(4)
     
-
-options = st.multiselect('What are your favorite colors',
-                             ['Green', 'Yellow', 'Red', 'Blue'],
-                             ['Yellow', 'Red'])
-st.write('You selected:', options)
+    
+    col1.metric("Número de paneles", str(k)+ " Paneles")
+    col2.metric("Potencia del Generador Fotovoltaico", str(i)+" Kw")
+    col3.metric("Potencia del Inversor", str(h)+" Kw")
+    col4.metric("Producción anual",d)
+    
+    for i in range(8):
+        st.write("")
+    if Numero_paneles == 0:
+        col1, col2, col3, col4 = st.columns(4)        
+        col1.metric("Importe del presupuesto",b , "0%")
+        col2.metric("Total Incluido IVA", c, "0%", delta_color="inverse")
+        col3.metric("Ahorro anual",e , "0%")
+        col4.metric("Amortización de la inversión",f , "0%")
+    elif Numero_paneles != 0:
+        col1, col2, col3, col4 = st.columns(4)        
+        col1.metric("Importe del presupuesto",b , "0%")
+        col2.metric("Total Incluido IVA", c, "21%", delta_color="inverse")
+        col3.metric("Ahorro anual",e , "15%")
+        col4.metric("Amortización de la inversión",f , "6.4%")
 
 
 
