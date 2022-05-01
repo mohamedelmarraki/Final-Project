@@ -42,12 +42,13 @@ def map_dirección_usuario(adress = "Madrid", zoom_start1 = 17.5):
 
 
 def energía_generador_fotovoltaico(N_paneles):
+    import pandas
     
-    csv_files = glob.glob('../../../Downloads/*.csv')
+    csv_files = glob.glob('../../Downloads/*.csv')
     
     csv_pvgis =("").join(csv_files).split("/")[-1]
     
-    df = pandas.read_csv(f'../../../../mohamedelmarraki/Downloads/{csv_pvgis}', sep="\t", header=[4]).head(12)
+    df = pandas.read_csv(f'../../Downloads/{csv_pvgis}', sep="\t", header=[4]).head(12)
     
     df = df.loc[:, ["year", "month","H(i_opt)_m", "T2m"]]
     
@@ -55,11 +56,13 @@ def energía_generador_fotovoltaico(N_paneles):
     
     HSP = irrandiacia_zona / 1000
     
-    energía_generada = (HSP * N_paneles * N_paneles)/1000
+    energía_generada = (HSP * N_paneles * 450)/1000
     
     df_potencia = pd.DataFrame(energía_generada).rename(columns={"H(i_opt)_m" : "Energía Generada en Kwh"})
 
     df_concat = pd.concat([df["month"], df_potencia], axis =1)
+    
+    fig = px.bar(df_concat, x = "month", y = "Energía Generada en Kwh")
     
     return fig.show()
 
@@ -67,8 +70,14 @@ def energía_generador_fotovoltaico(N_paneles):
 
 def obtener_amortización(Numero_paneles):
     a = pd.read_csv("data/Datos de amortización.csv")
-    if Numero_paneles <4:
+    if Numero_paneles ==0:
         return a[(a["Número de paneles"] == 0) & (a["Potencia del Inversor"]==0)]
+    if Numero_paneles ==1:
+        return a[(a["Número de paneles"] == 4) & (a["Potencia del Inversor"]==2)]
+    if Numero_paneles ==2:
+        return a[(a["Número de paneles"] == 4) & (a["Potencia del Inversor"]==2)]
+    if Numero_paneles ==3:
+        return a[(a["Número de paneles"] == 4) & (a["Potencia del Inversor"]==2)]
     if Numero_paneles ==4:
         return a[(a["Número de paneles"] == Numero_paneles) & (a["Potencia del Inversor"]==2)]
     if Numero_paneles ==5:
