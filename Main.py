@@ -188,6 +188,8 @@ with col1:
 
 with col2:
     agree2 = st.checkbox('Calcular mi consumo medio mensual?')
+    with st.expander(' ¿Comó se calcula mi consumo mensual?'):
+            st.markdown('#### Si conocemos los electrodomésticos que se usarán en la vivienda exactamente, entonces se sumarán los consumos diarios de cada uno de los electrodomésticos (receptores).')
 
 col1, col2 = st.columns(2)
 
@@ -271,3 +273,38 @@ if agree:
         col2.metric("Total Incluido IVA", c, "21%", delta_color="inverse")
         col3.metric("Ahorro anual",e , "15%")
         col4.metric("Amortización de la inversión",f , "6.4%")
+        
+        
+        
+        
+        
+        
+if agree2:
+    tf = open("data/pot_electrodomesticos.json", "r")
+    electro_dict = json.load(tf)
+    electrodomesticos = list(electro_dict.keys())
+    
+    horas_func = {}
+    
+    unidades = {}
+
+    for i in range(len(electrodomesticos)):
+        nueva = st.text_input(f"¿ Tiene usted {electrodomesticos[i]} en su casa (Sí/No) ? ")
+        if nueva.lower() in ["si".lower(), "sí".lower()]:
+            unidad = st.number_input(f'¿ Cúantas unidades de {electrodomesticos[i]} tiene usted en su casa ? ')
+            if nueva.lower() == "salir":
+                break
+            horas = st.number_input(f"Introduce un estimación aproximada de las horas de funcionamiento que va a tener el(a) {electrodomesticos[i]} en los días que esté funcionando : ")
+            if nueva.lower() == "salir":
+                break
+            horas_func[electrodomesticos[i]]=horas
+            unidades[electrodomesticos[i]] = unidad
+        elif nueva.lower() == "salir":
+            break
+        
+     
+         
+        
+        
+        
+ 
