@@ -244,7 +244,7 @@ if agree:
     for i in a["Amortización de la inversión"]:
         f = i
     for i in a["Número de paneles"]:
-        k = i
+        g = i
     for i in a["Potencia del Inversor"]:
         h = i
     for i in a["Potencia del Generador Fotovoltaico"]:
@@ -252,7 +252,7 @@ if agree:
     col1, col2, col3, col4 = st.columns(4)
     
     
-    col1.metric("Número de paneles", str(k)+ " Paneles")
+    col1.metric("Número de paneles", str(g)+ " Paneles")
     col2.metric("Potencia del Generador Fotovoltaico", str(i)+" Kw")
     col3.metric("Potencia del Inversor", str(h)+" Kw")
     col4.metric("Producción anual",d)
@@ -271,9 +271,3 @@ if agree:
         col2.metric("Total Incluido IVA", c, "21%", delta_color="inverse")
         col3.metric("Ahorro anual",e , "15%")
         col4.metric("Amortización de la inversión",f , "6.4%")
-
-
-
-
-
-
