@@ -1,7 +1,7 @@
 ### :arrow_right: **Diamond Price Predition** 
 En este proyecto he analizado los datos de más de 40.000 diamantes y he utilizado diferentes modelos de Machine Learning para predecir el precio de otros diamantes.
 
-![Image](https://almomento.mx/wp-content/uploads/2019/10/diamantes.jpg)
+![Image](https://actoresproductivos.com/wp-content/uploads/2020/12/fotovoltaica.jpg)
 
 
 
