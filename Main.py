@@ -292,23 +292,104 @@ if agree2:
         nueva = st.text_input(f"¿ Tiene usted {electrodomesticos[i]} en su casa (Sí/No) ? ")
         if nueva.lower() in ["si".lower(), "sí".lower()]:
             unidad = st.number_input(f'¿ Cúantas unidades de {electrodomesticos[i]} tiene usted en su casa ? ')
-            #if nueva.lower() == "salir":
-                #break
+            if nueva.lower() == "salir":
+                break
             horas = st.number_input(f"Introduce un estimación aproximada de las horas de funcionamiento que va a tener el(a) {electrodomesticos[i]} en los días que esté funcionando : ")
-        horas_func1[electrodomesticos[i]]=horas
-        unidades1[electrodomesticos[i]] = unidad
-            #if nueva.lower() == "salir":
-                #break
-        
-        #elif nueva.lower() == "salir":
-            #break
-    st.markdown(unidades1)
-    st.markdown(horas_func1)
+            horas_func1[electrodomesticos[i]]=horas
+            unidades1[electrodomesticos[i]] = unidad
+
     horas_func = horas_func1
 
     Numero_paneles=mwr.Numero_paneles(horas_func, unidades1)
     st.markdown(Numero_paneles)
+    
+    
+    
+    
+    
     col1, col2 = st.columns(2)
+    with col2:
+        adress=st.text_input("Introduzca su dirección. Ejem: Calle Zaragoza, Fuenlabrada, Madrid")
+        provincia_usuario = adress.split(",")
+        if len(provincia_usuario) == 3:
+            provincia_usuario = provincia_usuario[2]
+            provincia_usuario = provincia_usuario.lower().strip()
+            diccionario = man.read_datos_provincias()
+            for i, y in diccionario.items():
+                if provincia_usuario == i.lower():
+                    st.write(y)
+                else:
+                    pass
+        elif len(provincia_usuario) == 2:
+            provincia_usuario = provincia_usuario[1]
+            provincia_usuario = provincia_usuario.lower().strip()
+            diccionario = man.read_datos_provincias()
+            for i, y in diccionario.items():
+                if provincia_usuario == i.lower():
+                    st.write(y)
+                else:
+                    pass
+        elif len(provincia_usuario) == 1:
+            pass
+
+    with col1:
+        if adress == "":
+            folium_static(mre.map_dirección_usuario("Madrid", zoom_start1=2))
+        else:
+            folium_static(mre.map_dirección_usuario(adress))
+            
+            
+            
+    
+    
+    
+    with col2:
+        Precio=st.number_input("Introduzca su Precio de compra de la Electricidad (Opcional)")
+        with st.expander(' ¿Cómo puedo averiguar mi consumo medio mensual?'):
+            st.image('Images/foto9.png')
+        mac.pvgis(adress)
+    a = mre.obtener_amortización(Numero_paneles)
+    for i in range(8):
+        st.write("")
+    for i in a["Importe del presupuesto"]:
+        b = i
+    for i in a["Total (21% IVA incluido)"]:
+        c = i
+    for i in a["Producción anual"]:
+        d = i
+    for i in a["Ahorro anual"]:
+        e = i
+    for i in a["Amortización de la inversión"]:
+        f = i
+    for i in a["Número de paneles"]:
+        g = i
+    for i in a["Potencia del Inversor"]:
+        h = i
+    for i in a["Potencia del Generador Fotovoltaico"]:
+        i = i
+    col1, col2, col3, col4 = st.columns(4)
+    
+    
+    col1.metric("Número de paneles", str(g)+ " Paneles")
+    col2.metric("Potencia del Generador Fotovoltaico", str(i)+" Kw")
+    col3.metric("Potencia del Inversor", str(h)+" Kw")
+    col4.metric("Producción anual",d)
+    
+    for i in range(8):
+        st.write("")
+    if Numero_paneles == 0:
+        col1, col2, col3, col4 = st.columns(4)        
+        col1.metric("Importe del presupuesto",b , "0%")
+        col2.metric("Total Incluido IVA", c, "0%", delta_color="inverse")
+        col3.metric("Ahorro anual",e , "0%")
+        col4.metric("Amortización de la inversión",f , "0%")
+    elif Numero_paneles != 0:
+        col1, col2, col3, col4 = st.columns(4)        
+        col1.metric("Importe del presupuesto",b , "0%")
+        col2.metric("Total Incluido IVA", c, "21%", delta_color="inverse")
+        col3.metric("Ahorro anual",e , "15%")
+        col4.metric("Amortización de la inversión",f , "6.4%")
+    
     
     
     
