@@ -1,6 +1,8 @@
 # :sun_with_face: **Calculate Photovoltaic Installations** 
-En este proyecto he analizado los datos de más de 40.000 diamantes y he utilizado diferentes modelos de Machine Learning para predecir el precio de otros diamantes.
+In this project I have created a Streamlit page to calculate an estimate of the size of the photovoltaic installation that the user needs and also the cost data of the installation and how long it would take to amortize its installation
 
+
+![Image](https://pbs.twimg.com/media/E2uLK3JWEAghVDX.jpg)
 ![Image](https://actoresproductivos.com/wp-content/uploads/2020/12/fotovoltaica.jpg)
 
 
