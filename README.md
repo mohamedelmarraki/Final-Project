@@ -7,12 +7,16 @@ In this project I have created a Streamlit page to calculate an estimate of the 
 
 ---
 
-### :white_check_mark: **Estado**
+## :white_check_mark: **Estado**
 Final-Project Ironhack data analysis :Calculate Photovoltaic Installations
 
 ![Image](https://pbs.twimg.com/media/E2uLK3JWEAghVDX.jpg)
 
-### :computer: **Technology stack**
+&nbsp;
+
+---
+
+## :computer: **Technology stack**
 In this project several Python libraries have been used, such as:
 
 - Install [pandas](https://pandas.pydata.org/docs/user_guide/index.html) library. Copy and paste next command in your master branch:
@@ -60,12 +64,15 @@ In this project several Python libraries have been used, such as:
     pip install glob2
     ```
 
+To create the necessary functions that perform the calculations of the dimensions of the facilities and obtain the data of the irradiance and temperature data of all the coordinates of the world and the amortization data of the facilities.
 
-Para Elaborar un proceso exploratorio de los datos y dibujar algunos graficos explicativos y diferentes modelos de Machine Learning para predicir el precio de distintos diamantes y lograr el menor RMSE posible.
+&nbsp;
+
+---
 
 
 
-### :zap: **EDA Results**
+## :zap: **EDA Results**
 Tras el proceso exploratorio de los datos en el módulo 2 teníamos las siguientes conclusiones:
 
 - El quilate es la característica más relevante del precio de un diamante.
@@ -76,14 +83,18 @@ Tras el proceso exploratorio de los datos en el módulo 2 teníamos las siguient
 
 - En cuanto a la claridad, I1 y SI2 tienen dos de las calidades de claridad más bajas pero, como hay muchos diamantes de color I y J, el precio es más alto.
 
+&nbsp;
 
+---
 
-### :rocket: **Resultados de la predicción de modelo de Machine Learning**
+## :rocket: **Resultados de la predicción de modelo de Machine Learning**
 El mejor modelo para predecir el precio de los distintos diamantes es el LGBMRegressor con un RMSE de aproximadamente 533
 
+&nbsp;
 
+---
 
-### :wrench: Tools
+## :wrench: Tools
 - Python==3.9
 - pandas==1.3.4
 - seaborn==0.11.2
@@ -92,8 +103,11 @@ El mejor modelo para predecir el precio de los distintos diamantes es el LGBMReg
 - 
 [...]
 
+&nbsp;
 
-### :file_folder: Estructura de carpetas
+---
+
+## :file_folder: Estructura de carpetas
 ```
 └── Final-Project :Calculate Photovoltaic Installations
     ├── README.md
@@ -130,7 +144,9 @@ El mejor modelo para predecir el precio de los distintos diamantes es el LGBMReg
     
 ```   
 
+&nbsp;
 
+---
 
 ### :love_letter: Contact info
 Doubts? Advice? Drop me a line! :hugs:
