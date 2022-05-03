@@ -53,22 +53,9 @@ In this project several Python libraries have been used, such as:
     ```
     pip install folium
     ```
-    
-- Install [ipython](https://ipython.org/documentation.html) library. Copy and paste next command in your master branch:
-    ```
-    pip install ipython
-    ```
 - Install [glob](https://docs.python.org/3/library/glob.html) library. Copy and paste next command in your master branch:
     ```
     pip install glob2
-    ```
-- Install [re](https://docs.python.org/3/library/re.html) library. Copy and paste next command in your master branch:
-    ```
-    pip install regex
-    ```
-- Install [folium](https://python-visualization.github.io/folium/) library. Copy and paste next command in your master branch:
-    ```
-    pip install folium
     ```
 
 
