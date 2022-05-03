@@ -11,17 +11,66 @@ Final-Project Ironhack data analysis :Calculate Photovoltaic Installations
 ![Image](https://pbs.twimg.com/media/E2uLK3JWEAghVDX.jpg)
 
 ### :computer: **Technology stack**
-En este proyecto se ha utilizado varias librerías de Python como:
+In this project several Python libraries have been used, such as:
 
-- Pandas
+- Install [pandas](https://pandas.pydata.org/docs/user_guide/index.html) library. Copy and paste next command in your master branch:
+    ```
+    pip install pandas
+    ```
+- Install [numpy](https://numpy.org/doc/) library. Copy and paste next command in your master branch:
+    ```
+    pip install numpy 
+    ```
+- Install [selenium](https://selenium-python.readthedocs.io/) library. Copy and paste next command in your master branch:
+    ```
+    pip install selenium
+    ```
+- Install [plotly-express](https://plotly.com/python-api-reference/plotly.express.html) library. Copy and paste next command in your master branch:
+    ```
+    pip install plotly-express
+    ```
+- Install [os](https://docs.python.org/3/library/os.html) library. Copy and paste next command in your master branch:
+    ```
+    pip install os
+    ```
+- Install [geopy](https://geopy.readthedocs.io/en/stable/) library. Copy and paste next command in your master branch:
+    ```
+    pip install geopy
+    ```
+- Install [ipython](https://ipython.org/documentation.html) library. Copy and paste next command in your master branch:
+    ```
+    pip install ipython
+    ```
+- Install [math](https://docs.python.org/3/library/math.html) library. Copy and paste next command in your master branch:
+    ```
+    pip install python-math
+    ```
+- Install [time](https://docs.python.org/3/library/time.html) library. Copy and paste next command in your master branch:
+    ```
+    pip install times
+    ```
+- Install [folium](https://python-visualization.github.io/folium/) library. Copy and paste next command in your master branch:
+    ```
+    pip install folium
+    ```
+    
+- Install [ipython](https://ipython.org/documentation.html) library. Copy and paste next command in your master branch:
+    ```
+    pip install ipython
+    ```
+- Install [glob](https://docs.python.org/3/library/glob.html) library. Copy and paste next command in your master branch:
+    ```
+    pip install glob2
+    ```
+- Install [re](https://docs.python.org/3/library/re.html) library. Copy and paste next command in your master branch:
+    ```
+    pip install regex
+    ```
+- Install [folium](https://python-visualization.github.io/folium/) library. Copy and paste next command in your master branch:
+    ```
+    pip install folium
+    ```
 
-- Numpy
-
-- Matplotlib
-
-- Seaborn 
-
-- Sklearn
 
 Para Elaborar un proceso exploratorio de los datos y dibujar algunos graficos explicativos y diferentes modelos de Machine Learning para predicir el precio de distintos diamantes y lograr el menor RMSE posible.
 
