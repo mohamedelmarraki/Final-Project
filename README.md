@@ -1,4 +1,4 @@
-### :arrow_right: **Diamond Price Predition** 
+### :arrow_right: **Calculate Photovoltaic Installations** 
 En este proyecto he analizado los datos de más de 40.000 diamantes y he utilizado diferentes modelos de Machine Learning para predecir el precio de otros diamantes.
 
 ![Image](https://actoresproductivos.com/wp-content/uploads/2020/12/fotovoltaica.jpg)
@@ -56,25 +56,38 @@ El mejor modelo para predecir el precio de los distintos diamantes es el LGBMReg
 
 ### :file_folder: Estructura de carpetas
 ```
-└── ih_datamadpt1121_project_m3
-    ├── .gitignore
+└── Final-Project :Calculate Photovoltaic Installations
     ├── README.md
+    ├── .gitignore
+    ├── Main.py
+    ├── chromedriver
+    ├── requirements.txt
     ├── Notebooks
-    │   ├── Modelo 1 " los datos codificados con dummies, escalados y sin escalar con todos los modelos probados ".ipynb
-        ├── Modelo 2 " codificar los datos dando valor y preferencia a los mejores diamantes".ipynb'
-    │   ├── Modelo 3 "Scalar los datos del modolo 2".ipynb
-        ├── Modelo 4 "eliminar la columna city del modelo 3".ipynb
-        ├── Modelo 5 "Afinar los hyperparametros del modelo 4".ipynb
-        ├── Modelo 6 "Predecir los valores de la columna Z ".ipynb
-        ├── Modelo 7 "Predecir los valores de la columna x ".ipynb
-        ├── Modelo 8 "Predecir los valores de la columna y ".ipynb
-        ├── Modelo 9 "Sustituir los valores 0 de las columnas z,x,y por los valors predicidos anteriormente[El Mejor Modelo].ipynb
-        ├── 
-    └── Data
-        ├── diamonds_train.db
-        ├── diamonds_test.csv
-        
-    └── Submissions
+    │   ├── Calcular el consumo conociendo los electrodomesticos.ipynb
+        ├── Calcular la instalación conociendo el consumo eléctrico medio mensual.ipynb
+        ├── Devolver los datos de amortización.ipynb
+        ├── graficar la energía generada de un sistema fotovoltaico.ipynb
+        ├── Información de cada ciudad española.ipynb
+        ├── leer los datos de de las provincias.ipynb
+        ├── Map.ipynb
+        ├── Pruebas.ipynb
+        ├── Selenium de los datos de amortización.ipynb
+        ├── Selenium de los datos de pvgis.ipynb
+    ├── p_acquisition
+        ├── m_acquisition
+    ├── p_analysis
+        ├── m_analysis
+    ├── p_reporting
+        ├── m_reporting
+    ├── p_wrangling
+        ├── m_wrangling
+    └── data
+        ├── Datos da cada provincia Española.csv
+        ├── Datos de amortización.csv
+        ├── datos_bajapotencia.txt
+        ├── datos_electricaplicada.txt
+        ├── datos_iberdrola.txt
+        ├── pot_electrodomesticos.json
     
 ```   
 
