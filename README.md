@@ -6,7 +6,7 @@ En este proyecto he analizado los datos de más de 40.000 diamantes y he utiliza
 
 
 ### :white_check_mark: **Estado**
-Projecto módulo 3 Ironhack Analisis De Datos: Predicción del precio del diamante.
+Final-Project Ironhack data analysis :Calculate Photovoltaic Installations
 
 
 ### :computer: **Technology stack**
