@@ -41,11 +41,13 @@ unidades = diccionarios[1]'''
 
 
 
-def Numero_paneles():
+def Numero_paneles(a, b):
     
     import numpy
     
     import pandas
+    
+    import glob
     
     from itertools import chain
     
@@ -53,7 +55,7 @@ def Numero_paneles():
     
     import json
 
-    tf = open("../data/pot_electrodomesticos.json", "r")
+    tf = open("data/pot_electrodomesticos.json", "r")
     
     pot_electrodomesticos = json.load(tf)
     
@@ -61,14 +63,14 @@ def Numero_paneles():
     
     lista = []
     
-    for i in horas_func.keys():
+    for i in a.keys():
         lista.append(i)
 
     potencia = dict(filter(lambda x: x[0] in lista, pot_electrodomesticos.items()))
 
     dict3 = defaultdict(list)
     
-    for k, v in chain(horas_func.items(), unidades.items(), potencia.items()):
+    for k, v in chain(a.items(), b.items(), potencia.items()):
         dict3[k].append(int(v))
     dic_final = dict(dict3)
 
@@ -110,11 +112,11 @@ def Numero_paneles():
     elif Potencia_Prevista > 5000:
         tensión = 120
     
-    csv_files = glob.glob('../../../Downloads/*.csv')
+    csv_files = glob.glob('../../Downloads/*.csv')
     
     csv_pvgis =("").join(csv_files).split("/")[-1]
     
-    df = pandas.read_csv(f'../../../../../Downloads/{csv_pvgis}', sep="\t", header=[4]).head(12)
+    df = pandas.read_csv(f'../../Downloads/{csv_pvgis}', sep="\t", header=[4]).head(12)
     
     df = df.loc[:, ["year", "month","H(i_opt)_m", "T2m"]]
     

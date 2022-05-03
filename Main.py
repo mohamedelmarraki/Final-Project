@@ -284,24 +284,34 @@ if agree2:
     electro_dict = json.load(tf)
     electrodomesticos = list(electro_dict.keys())
     
-    horas_func = {}
+    horas_func1 = {}
     
-    unidades = {}
+    unidades1 = {}
 
     for i in range(len(electrodomesticos)):
         nueva = st.text_input(f"¿ Tiene usted {electrodomesticos[i]} en su casa (Sí/No) ? ")
         if nueva.lower() in ["si".lower(), "sí".lower()]:
             unidad = st.number_input(f'¿ Cúantas unidades de {electrodomesticos[i]} tiene usted en su casa ? ')
-            if nueva.lower() == "salir":
-                break
+            #if nueva.lower() == "salir":
+                #break
             horas = st.number_input(f"Introduce un estimación aproximada de las horas de funcionamiento que va a tener el(a) {electrodomesticos[i]} en los días que esté funcionando : ")
-            if nueva.lower() == "salir":
-                break
-            horas_func[electrodomesticos[i]]=horas
-            unidades[electrodomesticos[i]] = unidad
-        elif nueva.lower() == "salir":
-            break
+        horas_func1[electrodomesticos[i]]=horas
+        unidades1[electrodomesticos[i]] = unidad
+            #if nueva.lower() == "salir":
+                #break
         
+        #elif nueva.lower() == "salir":
+            #break
+    st.markdown(unidades1)
+    st.markdown(horas_func1)
+    horas_func = horas_func1
+
+    Numero_paneles=mwr.Numero_paneles(horas_func, unidades1)
+    st.markdown(Numero_paneles)
+    col1, col2 = st.columns(2)
+    
+    
+    
      
          
         
