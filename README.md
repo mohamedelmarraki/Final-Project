@@ -1,8 +1,6 @@
 # :sun_with_face: **Calculate Photovoltaic Installations** 
 In this project I have created a Streamlit page to calculate an estimate of the size of the photovoltaic installation that the user needs and also the cost data of the installation and how long it would take to amortize its installation
 
-
-![Image](https://pbs.twimg.com/media/E2uLK3JWEAghVDX.jpg)
 ![Image](https://actoresproductivos.com/wp-content/uploads/2020/12/fotovoltaica.jpg)
 
 
@@ -10,6 +8,7 @@ In this project I have created a Streamlit page to calculate an estimate of the 
 ### :white_check_mark: **Estado**
 Final-Project Ironhack data analysis :Calculate Photovoltaic Installations
 
+![Image](https://pbs.twimg.com/media/E2uLK3JWEAghVDX.jpg)
 
 ### :computer: **Technology stack**
 En este proyecto se ha utilizado varias librerías de Python como:
