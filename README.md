@@ -3,7 +3,9 @@ In this project I have created a Streamlit page to calculate an estimate of the 
 
 ![Image](https://actoresproductivos.com/wp-content/uploads/2020/12/fotovoltaica.jpg)
 
+&nbsp;
 
+---
 
 ### :white_check_mark: **Estado**
 Final-Project Ironhack data analysis :Calculate Photovoltaic Installations
