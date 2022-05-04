@@ -62,9 +62,9 @@ def energía_generador_fotovoltaico(N_paneles):
 
     df_concat = pd.concat([df["month"], df_potencia], axis =1)
     
-    fig = px.bar(df_concat, x = "month", y = "Energía Generada en Kwh")
+    fig = px.bar(df_concat, x = "month", y = "Energía Generada en Kwh", title="Producción de energía eléctrica mensualmente")
     
-    return fig.show()
+    return fig
 
 
 

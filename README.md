@@ -150,3 +150,7 @@ El mejor modelo para predecir el precio de los distintos diamantes es el LGBMReg
 
 ### :love_letter: Contact info
 Doubts? Advice? Drop me a line! :hugs:
+
+&nbsp;
+
+---

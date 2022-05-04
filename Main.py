@@ -230,7 +230,8 @@ if agree:
         Precio=st.number_input("Introduzca su Precio de compra de la Electricidad (Opcional)")
         with st.expander(' ¿Cómo puedo averiguar mi consumo medio mensual?'):
             st.image('Images/foto9.png')
-        mac.pvgis(adress)
+        if st.button("Press me"):
+            mac.pvgis(adress)
         Numero_paneles=(mwr.Numero_paneles_consumo_mensual(consumo_mensual))
     a = mre.obtener_amortización(Numero_paneles)
     for i in range(8):
@@ -251,29 +252,29 @@ if agree:
         h = i
     for i in a["Potencia del Generador Fotovoltaico"]:
         i = i
-    col1, col2, col3, col4 = st.columns(4)
+    col1a, col2a, col3a, col4a = st.columns(4)
     
     
-    col1.metric("Número de paneles", str(g)+ " Paneles")
-    col2.metric("Potencia del Generador Fotovoltaico", str(i)+" Kw")
-    col3.metric("Potencia del Inversor", str(h)+" Kw")
-    col4.metric("Producción anual",d)
+    col1a.metric("Número de paneles", str(g)+ " Paneles")
+    col2a.metric("Potencia del Generador Fotovoltaico", str(i)+" Kw")
+    col3a.metric("Potencia del Inversor", str(h)+" Kw")
+    col4a.metric("Producción anual",d)
     
     for i in range(8):
         st.write("")
     if Numero_paneles == 0:
-        col1, col2, col3, col4 = st.columns(4)        
-        col1.metric("Importe del presupuesto",b , "0%")
-        col2.metric("Total Incluido IVA", c, "0%", delta_color="inverse")
-        col3.metric("Ahorro anual",e , "0%")
-        col4.metric("Amortización de la inversión",f , "0%")
+        col1b, col2b, col3b, col4b = st.columns(4)        
+        col1b.metric("Importe del presupuesto",b , "0%")
+        col2b.metric("Total Incluido IVA", c, "0%", delta_color="inverse")
+        col3b.metric("Ahorro anual",e , "0%")
+        col4b.metric("Amortización de la inversión",f , "0%")
     elif Numero_paneles != 0:
-        col1, col2, col3, col4 = st.columns(4)        
-        col1.metric("Importe del presupuesto",b , "0%")
-        col2.metric("Total Incluido IVA", c, "21%", delta_color="inverse")
-        col3.metric("Ahorro anual",e , "15%")
-        col4.metric("Amortización de la inversión",f , "6.4%")
-        
+        col1c, col2c, col3c, col4c = st.columns(4)        
+        col1c.metric("Importe del presupuesto",b , "0%")
+        col2c.metric("Total Incluido IVA", c, "21%", delta_color="inverse")
+        col3c.metric("Ahorro anual",e , "15%")
+        col4c.metric("Amortización de la inversión",f , "6.4%")
+    st.plotly_chart(mre.energía_generador_fotovoltaico(Numero_paneles), use_container_width=True)   
         
         
         
@@ -347,7 +348,8 @@ if agree2:
         Precio=st.number_input("Introduzca su Precio de compra de la Electricidad (Opcional)")
         with st.expander(' ¿Cómo puedo averiguar mi consumo medio mensual?'):
             st.image('Images/foto9.png')
-        mac.pvgis(adress)
+        if st.button("Press me"):
+            mac.pvgis(adress)
     a = mre.obtener_amortización(Numero_paneles)
     for i in range(8):
         st.write("")
@@ -389,6 +391,9 @@ if agree2:
         col2.metric("Total Incluido IVA", c, "21%", delta_color="inverse")
         col3.metric("Ahorro anual",e , "15%")
         col4.metric("Amortización de la inversión",f , "6.4%")
+   
+    st.plotly_chart(mre.energía_generador_fotovoltaico(Numero_paneles), use_container_width=True)
+    
     
     
     
