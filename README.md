@@ -70,7 +70,7 @@ To create the necessary functions that perform the calculations of the dimension
 
 ---
 
-## License
+## :scroll: **sources**
 
 [Iberdrola](https://www.iberdrola.es/blog/energia/cual-es-la-potencia-necesaria-para-los-electrodomesticos)
 
@@ -88,8 +88,21 @@ To create the necessary functions that perform the calculations of the dimension
 
 ---
 
+## :page_facing_up: **ETL Results (Extract, Transform and load)**
+- The data extraction process was the most complex of the three processes in which I used the selenium library of both the python and javascript languages.
+
+- and to transform the data obtained with selenium I have used the python pandas library which I handle quite well and with which I have worked comfortably in this process
+
+- In the end I have loaded the data in files such as .csv, . jsony . text and with which I have started the EDA process
+
+
+&nbsp;
+
+---
+
+
 ## :zap: **EDA Results**
-Tras el proceso exploratorio de los datos en el módulo 2 teníamos las siguientes conclusiones:
+Tras el proceso exploratorio de los datos en  teníamos las siguientes conclusiones:
 
 - El quilate es la característica más relevante del precio de un diamante.
 
@@ -103,25 +116,6 @@ Tras el proceso exploratorio de los datos en el módulo 2 teníamos las siguient
 
 ---
 
-## :rocket: **Resultados de la predicción de modelo de Machine Learning**
-El mejor modelo para predecir el precio de los distintos diamantes es el LGBMRegressor con un RMSE de aproximadamente 533
-
-&nbsp;
-
----
-
-## :wrench: Tools
-- Python==3.9
-- pandas==1.3.4
-- seaborn==0.11.2
-- numpy==1.21.2
-- Sklearn==1.0.2
-- 
-[...]
-
-&nbsp;
-
----
 
 ## :file_folder: Folder structure
 ```
@@ -165,7 +159,7 @@ El mejor modelo para predecir el precio de los distintos diamantes es el LGBMReg
 ---
 
 ### :love_letter: Contact info
-Doubts? Advice? Drop me a line! :hugs:
+Doubts? Advice? Drop me a line! :hugs: mohamedelmarraki609@gmail.com
 
 &nbsp;
 
