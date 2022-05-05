@@ -70,7 +70,23 @@ To create the necessary functions that perform the calculations of the dimension
 
 ---
 
+## License
 
+[Iberdrola](https://www.iberdrola.es/blog/energia/cual-es-la-potencia-necesaria-para-los-electrodomesticos)
+
+[Bajatelapotencia](http://www.bajatelapotencia.org/la-potencia-que-necesitas/)
+
+[electricaplicada](https://www.electricaplicada.com/potencia-consumo-equipos-electricos/)
+
+[Pvgis](https://joint-research-centre.ec.europa.eu/pvgis-photovoltaic-geographical-information-system_en)
+
+[autoconsumoaldetalle](https://www.autoconsumoaldetalle.es/calcule-su-instalacion/#l)
+
+[kaylon](https://precioinstalacionplacassolares.com/)
+
+&nbsp;
+
+---
 
 ## :zap: **EDA Results**
 Tras el proceso exploratorio de los datos en el módulo 2 teníamos las siguientes conclusiones:
@@ -107,7 +123,7 @@ El mejor modelo para predecir el precio de los distintos diamantes es el LGBMReg
 
 ---
 
-## :file_folder: Estructura de carpetas
+## :file_folder: Folder structure
 ```
 └── Final-Project :Calculate Photovoltaic Installations
     ├── README.md

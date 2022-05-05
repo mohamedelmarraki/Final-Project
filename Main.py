@@ -118,6 +118,89 @@ with col3:
     st.subheader('AYUDAS Y SUBVENCIONES')
     st.caption("Reduce el coste de la instalación hasta en un 50% gracias a subvenciones o reducciones en el pago del IBI.")
     
+for i in range(5):
+    st.write("")
+    
+col1, col2, col3, col4, col5 = st.columns([1,3,3,1,3])    
+with col1:
+    for i in range(4):
+        st.write("")
+    st.image("Images/foto10.png")
+    for i in range(7):
+        st.write("")
+with col2:
+    for i in range(3):
+        st.write("")
+    st.subheader('*ESTUDIO GRATUITO*')
+    st.caption("***Resolvemos todas tus dudas sobre el autoconsumo y estudiamos tu situación para ofrecerte una solución 100% personalizada.***")
+    for i in range(5):
+        st.write("")
+with col1:
+    for i in range(4):
+        st.write("")
+    st.image("Images/foto12.png")
+    for i in range(7):
+        st.write("")
+with col2:
+    for i in range(3):
+        st.write("")
+    st.subheader('*PRESUPUESTO SIN COMPROMISO*')
+    st.caption("***Diseñamos un presupuesto con la mejor calidad y el precio más bajo del mercado. Trabajamos con todas las marcas de paneles e inversores.***")
+    for i in range(5):
+        st.write("")
+
+with col1:
+    for i in range(4):
+        st.write("")
+    st.image("Images/foto13.png")
+with col2:
+    for i in range(3):
+        st.write("")
+    st.subheader('*MEMORIA Y LICENCIA*')
+    st.caption("***Olvídate de todos los trámites. Nosotros nos encargamos de realizar la memoria y solicitar la licencia de obra menor para la instalación fotovoltaica.***")
+    
+with col3:
+    st.image("Images/foto11.png")
+
+
+with col4:
+    for i in range(4):
+        st.write("")
+    st.image("Images/foto14.png")
+    for i in range(7):
+        st.write("")
+with col5:
+    for i in range(3):
+        st.write("")
+    st.subheader('*ESTUDIO GRATUITO*')
+    st.caption("***Resolvemos todas tus dudas sobre el autoconsumo y estudiamos tu situación para ofrecerte una solución 100% personalizada.***")
+    for i in range(5):
+        st.write("")
+with col4:
+    for i in range(4):
+        st.write("")
+    st.image("Images/foto15.png")
+    for i in range(7):
+        st.write("")
+with col5:
+    for i in range(3):
+        st.write("")
+    st.subheader('*PRESUPUESTO SIN COMPROMISO*')
+    st.caption("***Diseñamos un presupuesto con la mejor calidad y el precio más bajo del mercado. Trabajamos con todas las marcas de paneles e inversores.***")
+    for i in range(5):
+        st.write("")
+
+with col4:
+    for i in range(4):
+        st.write("")
+    st.image("Images/foto16.png")
+with col5:
+    for i in range(3):
+        st.write("")
+    st.subheader('*MEMORIA Y LICENCIA*')
+    st.caption("***Olvídate de todos los trámites. Nosotros nos encargamos de realizar la memoria y solicitar la licencia de obra menor para la instalación fotovoltaica.***")
+    
+
 for i in range(10):
     st.write("")
 col1, col2, col3 = st.columns([1,6,1])
