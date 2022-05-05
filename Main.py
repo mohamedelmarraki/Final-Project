@@ -118,8 +118,14 @@ with col3:
     st.subheader('AYUDAS Y SUBVENCIONES')
     st.caption("Reduce el coste de la instalación hasta en un 50% gracias a subvenciones o reducciones en el pago del IBI.")
     
-for i in range(5):
+for i in range(4):
     st.write("")
+col1, col2, col3 = st.columns([1,2,1])
+
+with col2:
+    st.markdown("<h1 style='text-align: center; color: white;'>Gestionamos todos los trámites para tu instalación fotovoltaica</h1>", unsafe_allow_html=True)
+    for i in range(4):
+        st.write("")
     
 col1, col2, col3, col4, col5 = st.columns([1,3,3,1,3])    
 with col1:
