@@ -172,8 +172,8 @@ with col4:
 with col5:
     for i in range(3):
         st.write("")
-    st.subheader('*ESTUDIO GRATUITO*')
-    st.caption("***Resolvemos todas tus dudas sobre el autoconsumo y estudiamos tu situación para ofrecerte una solución 100% personalizada.***")
+    st.subheader('*INSTALACIÓN Y PUESTA EN MARCHA*')
+    st.caption("***Nuestro personal está cualificado y tiene años de experiencia en instalaciones de autoconsumo. Todo quedará listo para generar tu energía.***")
     for i in range(5):
         st.write("")
 with col4:
@@ -185,8 +185,8 @@ with col4:
 with col5:
     for i in range(3):
         st.write("")
-    st.subheader('*PRESUPUESTO SIN COMPROMISO*')
-    st.caption("***Diseñamos un presupuesto con la mejor calidad y el precio más bajo del mercado. Trabajamos con todas las marcas de paneles e inversores.***")
+    st.subheader('*BOLETÍN Y LEGALIZACIÓN*')
+    st.caption("***Emitiremos un boletín y realizaremos todos los trámites para la legalización de la instalación ante industria y la distribuidora.***")
     for i in range(5):
         st.write("")
 
@@ -197,7 +197,7 @@ with col4:
 with col5:
     for i in range(3):
         st.write("")
-    st.subheader('*MEMORIA Y LICENCIA*')
+    st.subheader('*EXCEDENTES*')
     st.caption("***Olvídate de todos los trámites. Nosotros nos encargamos de realizar la memoria y solicitar la licencia de obra menor para la instalación fotovoltaica.***")
     
 
