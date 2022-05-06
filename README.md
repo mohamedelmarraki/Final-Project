@@ -10,7 +10,7 @@ In this project I have created a Streamlit page to calculate an estimate of the 
 ## :white_check_mark: **Estado**
 Final-Project Ironhack data analysis :Calculate Photovoltaic Installations
 
-![Employee data](/Users/mohamedelmarraki/ironhack/Final-Project/Images/foto17.png?raw=true "Employee Data title")
+![Image](https://pbs.twimg.com/media/E2uLK3JWEAghVDX.jpg)
 
 &nbsp;
 
@@ -89,12 +89,13 @@ To create the necessary functions that perform the calculations of the dimension
 ---
 
 ## :page_facing_up: **ETL Results (Extract, Transform and load)**
-- The data extraction process was the most complex of the three processes in which I used the selenium library of both the python and javascript languages.
+After the exploratory process of the data obtained after the ETL:
 
-- and to transform the data obtained with selenium I have used the python pandas library which I handle quite well and with which I have worked comfortably in this process
+- I have been able to make this data useful by creating functions for the necessary calculation to know the dimensions according to the user's needs:
 
-- In the end I have loaded the data in files such as .csv, . jsony . text and with which I have started the EDA process
+- For example, from the pvgis page of the European Union, I have a database of irradiance and temperature of almost all the coordinates of the world.
 
+- and from the Keylon website I have obtained amortization data and the cost of the installations and other data
 
 &nbsp;
 
