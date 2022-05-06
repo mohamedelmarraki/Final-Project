@@ -73,7 +73,7 @@ st.set_page_config(layout="wide")
 
 #Definir el título
 
-col1, col2, col3 = st.columns([2,6,1])
+col1, col2, col3 = st.columns([3,6,2])
 
 with col1:
     st.write("")
@@ -87,7 +87,7 @@ with col3:
 
 col1, col2, col3 = st.columns(3)
 
-col1, col2, col3 = st.columns([1,6,1])
+col1, col2, col3 = st.columns([2,6,2])
 
 with col1:
     st.write("")
@@ -263,6 +263,7 @@ for i in range(5):
     st.write("")
     
 col1, col2, col3 = st.columns([2,6,2])
+
 with col2:
     st.markdown("### Rellene la información solicitada a continuación si quiere realizar un cálculo aproximado de la instalación solar fotovoltaica para autoconsumo de su vivienda o negocio. También podrá ver el coste de su intalción y cuanto tiempo tardará en amortizarla, también tendrá una estimación de la energía que producirá su instalación durante todo el año.")
     for i in range(5):
@@ -341,6 +342,7 @@ if agree:
         h = i
     for i in a["Potencia del Generador Fotovoltaico"]:
         i = i
+
     col1a, col2a, col3a, col4a = st.columns(4)
     
     
@@ -398,6 +400,7 @@ if agree2:
     
     
     col1, col2 = st.columns(2)
+
     with col2:
         adress=st.text_input("Introduzca su dirección. Ejem: Calle Zaragoza, Fuenlabrada, Madrid")
         provincia_usuario = adress.split(",")
@@ -422,6 +425,7 @@ if agree2:
         elif len(provincia_usuario) == 1:
             pass
 
+
     with col1:
         if adress == "":
             folium_static(mre.map_dirección_usuario("Madrid", zoom_start1=2))
@@ -439,25 +443,36 @@ if agree2:
             st.image('Images/foto9.png')
         if st.button("Press me"):
             mac.pvgis(adress)
+
+
     a = mre.obtener_amortización(Numero_paneles)
     for i in range(8):
         st.write("")
+
     for i in a["Importe del presupuesto"]:
         b = i
+
     for i in a["Total (21% IVA incluido)"]:
         c = i
+
     for i in a["Producción anual"]:
         d = i
+
     for i in a["Ahorro anual"]:
         e = i
+
     for i in a["Amortización de la inversión"]:
         f = i
+
     for i in a["Número de paneles"]:
         g = i
+
     for i in a["Potencia del Inversor"]:
         h = i
+
     for i in a["Potencia del Generador Fotovoltaico"]:
         i = i
+
     col1, col2, col3, col4 = st.columns(4)
     
     
@@ -468,6 +483,7 @@ if agree2:
     
     for i in range(8):
         st.write("")
+
     if Numero_paneles == 0:
         col1, col2, col3, col4 = st.columns(4)        
         col1.metric("Importe del presupuesto",b , "0%")
@@ -482,14 +498,3 @@ if agree2:
         col4.metric("Amortización de la inversión",f , "6.4%")
    
     st.plotly_chart(mre.energía_generador_fotovoltaico(Numero_paneles), use_container_width=True)
-    
-    
-    
-    
-    
-     
-         
-        
-        
-        
- 
