@@ -102,7 +102,7 @@ After the exploratory process of the data obtained after the ETL:
 ---
 
 
-## :zap: **EDA Results**
+## :zap: **EDA Results (exploratory data analysis)**
 Tras el proceso exploratorio de los datos en  teníamos las siguientes conclusiones:
 
 - El quilate es la característica más relevante del precio de un diamante.
