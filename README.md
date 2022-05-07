@@ -102,21 +102,6 @@ After the exploratory process of the data obtained after the ETL:
 ---
 
 
-## :zap: **EDA Results (exploratory data analysis)**
-Tras el proceso exploratorio de los datos en  teníamos las siguientes conclusiones:
-
-- El quilate es la característica más relevante del precio de un diamante.
-
-- Fair es la forma de corte que tienen los diamantes con mayor quilate. Esta es la razón por la que aun siendo la peor forma de corte, tienen un precio promedio más alto.
-
-- La forma de corte premium junto con los colores I y J, son los diamantes más caros aunque estos colores son dos de los de menor calidad. Esto se debe al peso en quilates de los diamantes I y J.
-
-- En cuanto a la claridad, I1 y SI2 tienen dos de las calidades de claridad más bajas pero, como hay muchos diamantes de color I y J, el precio es más alto.
-
-&nbsp;
-
----
-
 
 ## :file_folder: Folder structure
 ```
