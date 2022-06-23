@@ -11,6 +11,7 @@ import plotly.express as px
 
 
 
+
 def map_dirección_usuario(adress = "Madrid", zoom_start1 = 17.5):
     
     geo = Nominatim(user_agent = "MyApp")
